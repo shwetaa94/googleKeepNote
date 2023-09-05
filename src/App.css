@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ 
+}
+.plus_sign:hover{
+  transform: scale(1.3);
+
+}
+.header {
+  background-color: #f5ba13;
+  color:white;
+  font-size: 2rem;
+  font-weight:700;
+  padding-left:50px;
+  padding:0.7rem;
+  display:flex;
+}
+.bulb{
+   color:white;
+   align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer{
+  margin-bottom: 0;
+  align-self: flex-end;
+  width:100%;
+  float: inline-end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main_note {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display:flex;
+  flex-direction: column;
+  margin:15px 10px 5px 10px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.data{
+  margin:20px;
+  height:12rem;
+  width:22rem;
+  box-shadow: 0 3px 4px #ccc;
+ 
+}
+.main_note .plus_sign{
+  border-radius: 60%;
+  box-sizing: content-box;
+  padding:4px;
+  color:white;
+  font-weight: 900;
+  background-color: #f5ba13;
+  
+  margin-right:-38rem;
+}
+.main_note .btn{
+  margin-top:-8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input{
+  width:100%;
+  line-height:30px;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size: 1.5rem;
+  margin:10px ;
+font-weight: bold;
+}
+textarea{
+  margin:5px 10px;
+  height:74%; width:100%;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size: 1.1rem;
+
+}
+
+.delete_icon{
+  width:1rem;
+  height:1rem;
+}
+.note{
+  background:#fff;
+  border-radius:7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  /* height:200px;  set in .note p*/
+  width:16rem;
+  margin:16px;
+  float:left;
+}
+.note .btn{
+  position:relative;
+  float:right;
+  margin-right:10px;
+  color:#f4b400;
+  border:none;
+  height:40px;
+  width:40px;
+  background:transparent;
+  cursor:pointer;
+  outline:none;
+  box-shadow: 3px 3px 15px -10px rgba(0,0, 0, 0);
+}
+.note .btn:hover{
+  background-color: #f5ba13;
+  color:white;
+}
+
+.note h1{
+  font-size: 1.2em;
+  margin-bottom:6px;
+}
+.note p{
+  font-size:1.1em;
+  margin-bottom:10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height:8rem;
+  
 }
